@@ -1,4 +1,6 @@
-# fastargs
+# fastargs (Harvard Vision Lab Fork)
+
+> **Note:** This is a fork of the original [fastargs](https://github.com/GuillaumeLeclerc/fastargs) library with bug fixes for conditional sections when using command line arguments. The original library is by Guillaume Leclerc.
 
 Python library for argument and configuration management.
 
@@ -8,11 +10,16 @@ The goal of this library is to enable easy configuration of large code bases wit
 
 ### Install
 
-1. PIP: `pip install fastargs`
-2. Github: `pip install git+https://github.com/GuillaumeLeclerc/fastargs.git `
+1. Github: `pip install git+https://github.com/harvard-visionlab/fastargs.git `
+
+### Changes from Original Repo
+
+This fork fixes the following issue:
+- Fixed bug with conditional sections failing when using command line arguments (PR #24 in original repo)
+- When `param.section.is_enabled` was being checked in `config.augment_argparse()`, the sections had not yet been initialized, causing conditional sections to fail the check even when the conditions were true
 
 ### Example
-Simple full example available: https://github.com/GuillaumeLeclerc/fastargs/blob/main/examples/full_simple_example.py
+Simple full example available: https://github.com/harvard-visionlab/fastargs/blob/main/examples/full_simple_example.py
 
 ### Declare the arguments
 
