@@ -12,12 +12,12 @@ except Exception:
 
 setup(
 	# Name of the package 
-	name='fastargs',
+	name='fastargs-harvard-visionlab',
 	# Packages to include into the distribution 
 	packages=find_packages('.'),
 	# Start with a small number and increase it with 
 	# every change you make https://semver.org 
-	version='1.1.1',
+	version='1.1.2',
 	# Chose a license from here: https: // 
 	# help.github.com / articles / licensing - a - 
 	# repository. For example: MIT 
@@ -28,11 +28,11 @@ setup(
 	long_description=long_description,
 	long_description_content_type='text/markdown',
 	# Your name 
-	author='Guillaume Leclerc',
+	author='Harvard Vision Lab, original by Guillaume Leclerc',
 	# Your email 
-	author_email='leclerc@mit.edu',
+	author_email='alvarez@wjh.harvard.edu',
 	# Either the link to your github or to your website 
-	url='https://github.com/GuillaumeLeclerc/fastargs',
+	url='https://github.com/harvard-visionlab/fastargs',
 	# Link from which the project can be downloaded 
 	download_url='',
 	# List of keywords 
