@@ -21,6 +21,13 @@ class Config:
         self.entries = {}
         self.content = {}
 
+    def to_dict(self):
+        """Convert entries to flat dictionary"""
+        params = {
+            '.'.join(k): config[k] for k in self.entries.keys()
+        }
+        return params
+    
     def add_section(self, section):
         self.sections[section.ns] = section
 
