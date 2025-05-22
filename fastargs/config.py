@@ -24,7 +24,7 @@ class Config:
     def to_dict(self):
         """Convert entries to flat dictionary"""
         params = {
-            '.'.join(k): config[k] for k in self.entries.keys()
+            '.'.join(k): self[k] for k in self.entries.keys()
         }
         return params
     
